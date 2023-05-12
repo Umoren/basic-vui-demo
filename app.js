@@ -43,9 +43,9 @@ function toggleRecognition() {
         console.log(word);
       }
 
-      if (transcript.toLowerCase() === "click me") {
+      if (transcript.toLowerCase().includes("button")) {
         targetButton.click();
-        console.log('The "Click me" command has been recognized.');
+        console.log('The "button" command has been recognized.');
       }
     };
 
