@@ -2,9 +2,21 @@ let recognition;
 
 const startButton = document.getElementById("startButton");
 const targetButton = document.getElementById("targetButton");
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("closeModal");
 
 targetButton.addEventListener("click", () => {
-  alert("Button clicked!");
+  modal.style.display = "block";
+});
+
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 });
 
 function toggleRecognition() {
@@ -25,6 +37,11 @@ function toggleRecognition() {
 
     recognition.onresult = function (event) {
       const transcript = event.results[event.results.length - 1][0].transcript;
+      const words = transcript.split(" ");
+
+      for (const word of words) {
+        console.log(word);
+      }
 
       if (transcript.toLowerCase() === "click me") {
         targetButton.click();
