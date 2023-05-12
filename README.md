@@ -19,3 +19,5 @@ However, it's important to note that real-world VUI applications often need to a
 To run the demo, simply open the `index.html` file in a modern web browser. Make sure to allow microphone access when prompted.
 
 Start the speech recognition by clicking the "Start Recognition" button, then say "Click me". The application should recognize the command and simulate a click on the "Click Me" button, triggering an alert message.
+
+[![Basic VUI demo](https://res.cloudinary.com/marcomontalbano/image/upload/v1683906788/video_to_markdown/images/video--52dadf16c0915597a7f726bf385f23a4-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://res.cloudinary.com/sammy365/video/upload/v1683906764/vuiReal_dipbd2.webm "Basic VUI demo")
